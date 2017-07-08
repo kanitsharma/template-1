@@ -28,10 +28,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Courses</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Leaderboard</a></li>
-            <li><a href="#">Be a techer</a></li>
+            <li class="active"><a href="#" class="tt">Courses</a></li>
+            <li><a href="#" class="tt">Pricing</a></li>
+            <li><a href="#" class="tt">Leaderboard</a></li>
+            <li><a href="#" class="tt">Be a techer</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="./">login</a></li>
@@ -49,7 +49,7 @@
         <a href="#" class="white">See courses</a>
       </div>
       <div class="vidcontainer">
-        <video onclick="show()"  class="video"  autoplay poster="placeholder.jpg" width="400" height="300">
+        <img onclick="show()"  class="video"  src="placeholder.jpg" width="400" height="300">
 
         </video>
         <img src="play.png" class="play" alt="" height="50" width="50">
@@ -76,6 +76,13 @@
       function hide() {
         vid.style.visibility='hidden';
       }
+
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar-fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
 
     </script>
     <script src="particles.js"></script>

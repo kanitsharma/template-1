@@ -72,8 +72,6 @@ body{
 }
 
 .botmenu{
-  position: absolute;
-  top: 650px;
   width: 100%;
   background-color: CornflowerBlue ;
   display: flex;
@@ -92,8 +90,8 @@ body{
     text-align: center;
   }
 }
-a {background-color:transparent !important;}
-a:hover{
+.tt {background-color:transparent !important;}
+.tt:hover{
   border-bottom: 1px solid white;
 }
 .overlay{
@@ -120,6 +118,10 @@ a:hover{
   border: 1px solid darkblue;
   color: white;
 }
+.navbar-fixed-top.scrolled {
+  background-color: blue !important;
+  transition: background-color 10ms linear;
+}
 .navbar-default .navbar-nav li a:hover,
  .navbar-default .navbar-nav > .active > a:hover,  {
        background-color: initial;
@@ -128,5 +130,6 @@ a:hover{
  @media only screen and (max-width: 766px) {
  .collapsing, .in {background-color: #f7f7f7;}
  .collapsing ul li a, .in ul li a {color: #555!important;}
+ .collapsing ul li a:hover, .in ul li a:hover {color: black!important;}
  .collapsing ul li a:hover, .in ul li a:hover {color: black!important;}
  }

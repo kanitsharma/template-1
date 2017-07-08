@@ -22,11 +22,10 @@
   text-decoration: none;
 }
 .video{
-  width: 400px;
-  height: 300px;
 }
 .vidcontainer{
   position: relative;
+  margin-top: 20px;
 }
 .nav li:hover{
   background-color:none !important;
@@ -38,7 +37,7 @@
   align-items: center;
   margin-top: 20vh;
   text-align: center;
-  padding: 10px;
+  justify-content: flex-end;
 }
 .buttons{
   display: flex;
@@ -47,6 +46,12 @@
 .buttont{
   display: flex;
   flex-direction: row;
+}
+body{
+  background-color: skyblue !important;
+}
+.icon-bar {
+   background-color:#fff !important;
 }
 .play{
   position: absolute;
@@ -68,8 +73,13 @@
   border-radius: 30px;
   margin : 20px;
   color: white;
+  width: 200px;
+  text-align: center;
 }
+
 .botmenu{
+  position: absolute;
+  top: 89%;
   width: 100%;
   background-color: CornflowerBlue ;
   display: flex;
@@ -88,3 +98,7 @@
     text-align: center;
   }
 }
+.navbar-default .navbar-nav li a:hover,
+ .navbar-default .navbar-nav > .active > a:hover,  {
+       background-color: initial;
+ }

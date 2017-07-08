@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Landing</title>
-    <link rel="stylesheet" href="main.css">
+
         <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <nav class="navbar navbar-fixed-top">
@@ -40,6 +40,7 @@
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
     </nav>
+    <div id="particles-js"></div>
     <div class="banner">
       <h1>Code design and build with live teachers</h1>
       <h3>Interactive tech courses in our intelligent virtual classrooms</h3>
@@ -48,14 +49,14 @@
         <a href="#" class="white">See courses</a>
       </div>
       <div class="vidcontainer">
-        <video class="video"  autoplay poster="placeholder.jpg">
+        <video class="video"  autoplay poster="placeholder.jpg" width="400" height="300">
 
         </video>
         <img src="play.png" class="play" alt="" height="50" width="50">
       </div>
     </div>
     <div class="botmenu">
-      <h1>What do you want to learn?</h1>
+      <h1 style="color: white;">What do you want to learn?</h1>
       <div class="buttont">
         <a href="#" class="trans">Coding</a>
         <a href="#" class="trans">Design</a>
@@ -64,5 +65,8 @@
         <a href="#" class="trans">Hardware</a>
       </div>
     </div>
+    <script src="particles.js"></script>
+  <script src="main.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,0 +1,42 @@
+*{
+  color: black;
+}
+.white{
+  background-color: white !important;
+  color : black !important;
+  border-radius: 30px;
+}
+.right a{
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+.video{
+  width: 400px;
+  height: 300px;
+  background-color: black;
+}
+.banner{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
+.buttons a{
+  padding: 10px 20px;
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .buttons{
+    flex-direction: column !important;
+  }
+}

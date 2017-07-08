@@ -1,6 +1,5 @@
 *{
   color: black;
-  background-color: lightblue;
 }
 .navbar{
   padding: 10px 20px;
@@ -29,14 +28,23 @@
 .vidcontainer{
   position: relative;
 }
+.nav li:hover{
+  background-color:none !important;
+}
 .banner{
   color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20vh;
+  text-align: center;
+  padding: 10px;
 }
 .buttons{
+  display: flex;
+  flex-direction: row;
+}
+.buttont{
   display: flex;
   flex-direction: row;
 }
@@ -47,15 +55,36 @@
   border-radius: 50%;
 }
 .buttons a{
-  padding: 10px 20px;
+  padding: 15px 25px;
   margin: 20px;
   text-decoration: none;
   color: white;
   background-color: green;
-  border-radius: 20px;
+  border-radius: 30px;
+}
+.trans{
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin : 20px;
+  color: white;
+}
+.botmenu{
+  width: 100%;
+  background-color: CornflowerBlue ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media only screen and (max-width: 800px) {
   .buttons{
     flex-direction: column !important;
+  }
+  .buttont{
+    flex-direction: column !important;
+  }
+  .trans{
+    width: 100%;
+    text-align: center;
   }
 }
